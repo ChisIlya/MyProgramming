@@ -3,10 +3,11 @@
 import math # Импорт библиотеки Маth (математические функции и тп)
 import numpy # Импорт библиотеки numpy (основным объектов тут является многомерный массив элементов одного типа)
 import matplotlib.pyplot as mpp # Импорт библиотеки matplotlib с модулем pyplot (позволяет создавать графики при помощи Питона) и присваивание короткого "названия" в этой программе
+
 if __name__=='__main__': # Запуск скрипта полностью только в программе. При импорте эта чать программы выполнена не будет.
     arguments = numpy.r_[0:200:0.1] # Насколько я понял, присваиваю arguments значения массива от 0 до 200 с шагом 0.1, но тут не уверен
-mpp.plot( # Запуск matplotlib.pyplot c функцией plot
-arguments, # Присваивая каждому значению из arguments 
-[math.sin(a) * math.sin(a/20.0) for a in arguments] # Вот эту формулу
-)
-mpp.show() # Запуск matplotlib.pyplot c функцией show 	
+    mpp.plot( # Запуск matplotlib.pyplot c функцией plot
+    arguments, # Присваивая каждому значению из arguments 
+    [math.sin(a) * math.sin(a/20.0) for a in arguments] # Вот эту формулу
+    )
+    mpp.show() # Запуск matplotlib.pyplot c функцией show 	
