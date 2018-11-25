@@ -1,4 +1,6 @@
-﻿import numpy
+%matplotlib inline
+
+import numpy
 import numpy.linalg
 import matplotlib.pyplot as plt
 
