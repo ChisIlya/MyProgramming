@@ -1,4 +1,3 @@
-%matplotlib inline
 
 import numpy
 import numpy.linalg
