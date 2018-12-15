@@ -23,7 +23,3 @@ print(is_prime(a))
 @functools.lru_cache()
 def is_prime_cached(a):
     return is_prime(a)
-
-%timeit is_simple(500)
-%timeit is_simple_cached(500)
-print(is_prime_cached(500))
