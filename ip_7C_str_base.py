@@ -1,7 +1,7 @@
 def str_base(n, k):
     ls = []
     alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    string = ''
+    number_in_k_base = ''
     
     while n > 0:
         n, a = divmod(n, k)
@@ -11,8 +11,8 @@ def str_base(n, k):
         ls[n] = alphabet [ls[n]]
         
     for n in range(len(ls)):
-        string = string + ls[n]
+        number_in_k_base = number_in_k_base + ls[n]
         
-    return (string)
+    return (number_in_k_base)
 
 print(str_base(44027, 36))
