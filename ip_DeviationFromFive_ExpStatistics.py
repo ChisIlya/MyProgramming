@@ -4,3 +4,5 @@ from scipy import stats
 
 devfromfive = pd.read_excel('C:\Laba\lab_1.01.xlsx', sheet_name=0)
 print(stats.kstest(devfromfive, 'norm', (devfromfive.mean(),devfromfive.std())))
+
+#https://github.com/ChisIlya/MyProgramming/blob/master/lab_1.01.xlsx
