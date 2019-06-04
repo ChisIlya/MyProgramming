@@ -1,0 +1,15 @@
+﻿{% extends "base.html" %}
+
+{% block content %}
+
+<p>We count gcd of two numbers</p>
+
+<form action="/gcd" method="GET">
+  <input type="number", value="{{a}}", name="num1" />
+  <input type="number", value="{{b}}", name="num2" />
+  <input type="submit", value="out">
+</form>
+
+<p> The gcd of your numbers is {{result}}</p>
+
+{% endblock %}
